@@ -1,14 +1,7 @@
 function doSomethingAboutClickOrSaveButton() {
     var key = $(this).parent().attr("id")
-
     var userInput = $(this).siblings("textarea").val();
     localStorage.setItem(key, userInput);
-    // Optional: Show notification that item was saved to localStorage by adding class 'show'
-    // Hint: grab the notification element and add class
-  
-    // Optional: Timeout to remove 'show' class after 5 seconds
-    // Hint: global timeout function that only get invoke once
-  
   };
   
   $('.saveBtn').on('click', doSomethingAboutClickOrSaveButton);
@@ -49,4 +42,3 @@ var timeDisplayElement = $('#currentDay');
 var rightNow = moment().format("dddd, MMMM Do");
 timeDisplayElement.text(rightNow);
 
-  // Optional: what does $(document).ready(function() {}) do and how can you add it to your code
