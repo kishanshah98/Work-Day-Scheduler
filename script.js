@@ -1,10 +1,10 @@
-function doSomethingAboutClickOrSaveButton() {
+function setStorage() {
     var key = $(this).parent().attr("id")
     var userInput = $(this).siblings("textarea").val();
     localStorage.setItem(key, userInput);
   };
   
-  $('.saveBtn').on('click', doSomethingAboutClickOrSaveButton);
+  $('.saveBtn').on('click', setStorage);
   
   function updateTimeBlockers() {
     var time = moment().hours();
